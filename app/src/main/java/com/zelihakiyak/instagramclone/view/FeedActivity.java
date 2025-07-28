@@ -8,13 +8,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -48,7 +44,7 @@ public class FeedActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance(); //initialize
         firebaseFirestore = FirebaseFirestore.getInstance();
 
-        postArrayList = new ArrayList<Post>();
+        postArrayList = new ArrayList<>();
 
         getData();
 
@@ -89,8 +85,7 @@ public class FeedActivity extends AppCompatActivity {
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
-//        getMenuInflater().inflate(R.menu.menu, menu);
-//        return true;
+
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.menu,menu);
 

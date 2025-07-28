@@ -39,7 +39,6 @@ public class UploadActivity extends AppCompatActivity {
     private FirebaseFirestore firebaseFirestore;
     private FirebaseAuth firebaseAuth;
     private StorageReference storageReference;
-    private FirebaseUser firebaseUser;
     Uri imageData;
     ActivityResultLauncher<Intent> activityResultLauncher;
     ActivityResultLauncher<String> permissionLauncher;
@@ -57,7 +56,7 @@ public class UploadActivity extends AppCompatActivity {
         storageReference = firebaseStorage.getReference();
         firebaseFirestore = FirebaseFirestore.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
-        firebaseUser = firebaseAuth.getCurrentUser();
+
 
     }
     public void uploadButton(View view){

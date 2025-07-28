@@ -1,10 +1,8 @@
 package com.zelihakiyak.instagramclone.adapter;
 
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,12 +20,14 @@ public class PostAdapter extends  RecyclerView.Adapter<PostAdapter.PostHolder> {
         this.postArrayList = postArrayList;
     }
 
+
     @NonNull
     @Override
     public PostHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         RecyclerRowBinding recyclerRowBinding = RecyclerRowBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false);
         return new PostHolder(recyclerRowBinding);
     }
+
 
     @Override
     public void onBindViewHolder(@NonNull PostHolder holder, int position) {
@@ -42,7 +42,7 @@ public class PostAdapter extends  RecyclerView.Adapter<PostAdapter.PostHolder> {
         return postArrayList.size();
     }
 
-    class PostHolder extends RecyclerView.ViewHolder {
+    static class PostHolder extends RecyclerView.ViewHolder {
         RecyclerRowBinding recyclerRowBinding;
         
 

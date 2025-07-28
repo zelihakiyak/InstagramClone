@@ -4,7 +4,7 @@
     android:id="@+id/main">
     <item
         android:id="@+id/addpost"
-        android:title="Add Post"></item>
+        android:title="Add Post" />
 
     <item
         android:id="@+id/logout"
