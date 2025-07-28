@@ -18,7 +18,7 @@ Feed Page | Upload Page | Login Page
 :-------------------------:|:-------------------------:|:-------------------------:
 ![Feed Screenshot](screenshots/feed.png) | ![Upload Screenshot](screenshots/upload.png) | ![Login Screenshot](screenshots/login.png)
 
-> 📁 Be sure to add a `screenshots` folder to your repository and place your screenshots there.
+
 
 
 
