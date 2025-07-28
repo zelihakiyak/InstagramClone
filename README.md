@@ -16,7 +16,7 @@ This project is a simple Instagram clone built using Firebase. Users can sign in
 
 Feed Page | Upload Page | Login Page
 :-------------------------:|:-------------------------:|:-------------------------:
-![Feed Screenshot](screenshots/feed.png) | ![Upload Screenshot](screenshots/upload.png) | ![Login Screenshot](screenshots/login.png)
+![Feed](screenshots/feed.png) | ![Upload Screenshot](screenshots/upload.png) | ![Login Screenshot](screenshots/login.png)
 
 
 
